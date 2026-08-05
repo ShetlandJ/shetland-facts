@@ -73,6 +73,28 @@
   .chips a:hover,.chips a:focus-visible{border-color:var(--peat);color:var(--peat)}
   .chips a:focus-visible{outline:2px solid var(--peat);outline-offset:2px}
 
+  /* ---------- jump-to index ---------- */
+  .toc{padding:1.5rem 0 .5rem}
+  .toc h2{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--peat);font-weight:600;margin-bottom:.8rem;
+  }
+  .toc ol{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.15rem .9rem}
+  @media (max-width:26rem){.toc ol{grid-template-columns:1fr}}
+  .toc a{
+    display:flex;justify-content:space-between;align-items:baseline;gap:.6rem;
+    color:var(--ink);text-decoration:none;
+    padding:.45rem 0;border-bottom:1px solid var(--line);
+    font-size:.95rem;
+  }
+  .toc a:hover,.toc a:focus-visible{color:var(--peat)}
+  .toc a:focus-visible{outline:2px solid var(--peat);outline-offset:2px}
+  .toc .n{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    font-size:.72rem;font-weight:600;color:var(--faint);flex-shrink:0;
+  }
+
   /* ---------- sections ---------- */
   section{padding:2.2rem 0 .4rem;scroll-margin-top:3.4rem}
   .sec-head{display:flex;align-items:baseline;gap:.7rem;margin-bottom:.4rem}
@@ -136,6 +158,23 @@
 </nav>
 
 <main class="wrap">
+
+  <div class="toc" aria-label="Jump to a category">
+    <h2>Jump to</h2>
+    <ol>
+      <li><a href="#prehistory">Prehistory &amp; Archaeology <span class="n">8</span></a></li>
+      <li><a href="#vikings">Vikings &amp; Norse Heritage <span class="n">17</span></a></li>
+      <li><a href="#castles">Castles, Brochs &amp; Monuments <span class="n">8</span></a></li>
+      <li><a href="#fishing">Fishing &amp; Aquaculture <span class="n">12</span></a></li>
+      <li><a href="#sea">Shipwrecks &amp; Smugglers <span class="n">10</span></a></li>
+      <li><a href="#war">Shetland at War <span class="n">8</span></a></li>
+      <li><a href="#murder">Murder, Mystery &amp; Legends <span class="n">16</span></a></li>
+      <li><a href="#wildlife">Wildlife &amp; Natural Wonders <span class="n">3</span></a></li>
+      <li><a href="#plants">Plants &amp; Rare Species <span class="n">1</span></a></li>
+      <li><a href="#island-life">Crofting, Knitting &amp; Island Life <span class="n">18</span></a></li>
+      <li><a href="#industry">Industry &amp; Innovation <span class="n">10</span></a></li>
+    </ol>
+  </div>
 
   <section id="prehistory">
     <div class="sec-head"><h2>Prehistory &amp; Archaeology</h2><span class="count">8 facts</span></div>
